@@ -1,0 +1,7 @@
+- name: Test playbook
+  hosts: local
+  become: yes
+
+  roles:
+    -  ~/ansible-demo/roles/print_msg
+    -  ~/ansible-demo/roles/create_file

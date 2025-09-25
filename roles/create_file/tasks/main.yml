@@ -1,0 +1,10 @@
+---
+# tasks file for create_file
+
+- name: Create a test file
+  copy:
+    dest: /tmp/test_file.txt
+    content: "This is a ansible file created from ansible role"
+    owner: "{{ file_owner }}"
+    group: "{{ file_group }}"
+    mode: '0700'

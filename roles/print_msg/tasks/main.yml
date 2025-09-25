@@ -1,0 +1,5 @@
+---
+# tasks file for print_msg
+- name: Say hello role
+  debug:
+    msg: "Hello, this is test ansible, we are creating file in /tmp/ folder"
